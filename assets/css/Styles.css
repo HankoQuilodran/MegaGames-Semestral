@@ -14,6 +14,7 @@ header{
     background-color: #1b289b;
     color: azure;
 }
+
 .logo {
     max-width: 200px;
     justify-self: center;
@@ -44,3 +45,77 @@ footer{
         border-color: #ffffff; }
 .social-media p a:hover span {
           color: #fff; }
+
+
+
+.imageDisplay {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    float: left;
+}
+
+.titleDisplay {
+    padding-top: 20px;
+    padding-left: 30px;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+.descriptionDisplay{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+    
+}
+
+.btnComprar{
+    padding: 10px;
+    background-color: #000c7c;
+    color: white;
+    transition: background-color 0.5s;
+}
+.btnComprar:hover{
+
+    background-color: rgb(127, 182, 255);
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #000c7c;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
