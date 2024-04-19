@@ -1,46 +1,134 @@
-body{
-    background-image: url(/assets/img/image-28.png);
+/*ESTRUCTURA GENERAL*/
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header{
+body {
+    background-image: url(/assets/img/image-28.png);
+    margin: 0;
+    padding: 0;
+}
+header {
     background-color: #000c7c;
 }
-.header-content{
-    display: flex;
-
-
-}
-.upper-section{
-    background-image: none;
+.upper-section {
     background-color: #1b289b;
     color: azure;
 }
-.logo {
+.logoCentral{
     max-width: 200px;
     justify-self: center;
-  }
-  .card-container {
-    background-color: #d3d3d3;
-    justify-content: space-around;
-    min-height: 960px;
-    min-width: 80%;
-  }
-footer{
+}
+footer {
     background-color: black;
     color: #e6e6e6;
     padding: 40px 0px;
 }
+/*===================*/
+
+/*ESTRUCTURA DE TEXTO*/
+.centrarTexto{
+    text-align: center;
+    padding: 25px 30px;
+    }
+/*==================*/
+
+/* Iconos de Redes Sociales */
 .social-media {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 5px; 
+}
 .social-media p a {
-      border: 2px solid #e6e6e6;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 4px; }
+    border: 4px solid #e6e6e6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 4px; 
+}
 .social-media p a span {
-        color: #ffffff; }
+    color: #ffffff; 
+}
 .social-media p a:hover {
-        background: #6200ff;
-        border-color: #ffffff; }
+    background: #ffffff;
+    border-color: #000000; 
+}
 .social-media p a:hover span {
-          color: #fff; }
+    color: #000000; 
+}
+/*==================*/
+.card-container {
+    background-color: #f5f5f5;
+    justify-content: space-around;
+    min-height: 960px;
+    min-width: 80%;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*=============*/
+
+/*Dropdown de Manu del Navbar*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover,.dropdown:hover .dropbtn {
+    background-color: rgb(82, 51, 255);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*================*/
+
+/*Carousel de Novedades(Top Pagina)*/
+.carousel {
+    margin-bottom: 0px;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  .carousel-item {
+    height: 32rem;
+  }
+/*================*/
