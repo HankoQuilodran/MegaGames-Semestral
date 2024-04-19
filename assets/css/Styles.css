@@ -33,6 +33,10 @@ footer {
   text-align: center;
   padding: 25px 30px;
   }
+.footer-links a{
+  text-decoration: none;
+  color: #ddd;
+}
 /*==================*/
 .header-content{
     display: flex;
