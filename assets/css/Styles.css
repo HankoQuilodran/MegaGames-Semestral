@@ -28,7 +28,12 @@ footer {
   justify-self: center;
 }
 /*===================*/
-
+/*ESTRUCTURA DE TEXTO*/
+.centrarTexto{
+  text-align: center;
+  padding: 25px 30px;
+  }
+/*==================*/
 .header-content{
     display: flex;
 }
@@ -166,7 +171,7 @@ footer {
     background-color: #f1f1f1;
   }
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
