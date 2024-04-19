@@ -190,6 +190,11 @@ footer {
   
 }
 
+.shopImage {
+  width: 15%;
+  height: 15%;
+}
+
 /*=============*/
 
 /*Boton de Compra*/
@@ -203,6 +208,21 @@ footer {
 
     background-color: rgb(127, 182, 255);
 }
+
+.btnQuitar{
+  float: right;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #b42424;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+.btnQuitar:hover{
+
+  background-color: #fc2424;
+}
+
 /*=======*/
 
 /* Estructura de Tabs */
@@ -273,3 +293,18 @@ footer {
   background-color: #0011ff;
 }
 /*============*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
