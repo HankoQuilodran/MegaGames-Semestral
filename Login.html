@@ -48,7 +48,7 @@
           </div>
         </form>
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+	        	<li class="nav-item active"><a href="/index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item dropdown">
                     <button class="dropbtn">Dropdown
                         <i class="fa fa-caret-down"></i>
@@ -70,9 +70,72 @@
 	  </nav>
       <button onclick="topFunction()" id="myBtn" title="Go to top"> -^- </button>
     </section>
+
+
+
     <div class="container card-container">
-        <h2>simple login goes here</h2>
+      <br>
+      <div class="ROW">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 center" >
+          <form>
+
+            <h1 class="titleDisplay">Iniciar Sesion</h1>
+            <br>
+            <div class="mb-3" style="color: black;">
+              <label for="nombre" class="form-label">Email:&nbsp;</label>
+              <label id="error1" class="form-label"></label>
+              <input type="text" class="form-control" id="email_L">
+            </div>
+
+
+
+            <div class="mb-3" style="color: black;">
+              <label for="apellido" class="form-label">Contraseña:&nbsp;</label>
+              <label id="error2" class="form-label"></label>
+              <input type="text" class="form-control" id="password_L">
+           </div>
+           <br>
+
+           <button class="btn btn-primary" id="btnEntrar" type="submit">
+            Entrar
+           </button>
+
+
+           <hr>
+
+           <h1 class="titleDisplay"> Registrarse</h1>
+           <br>
+            <div class="mb-3" style="color: black;">
+              <label for="nombre" class="form-label">Nombre:&nbsp;</label>
+              <label id="error3" class="form-label"></label>
+              <input type="text" class="form-control" id="nombre_R">
+            </div>
+
+            <div class="mb-3" style="color: black;">
+              <label for="apellido" class="form-label">Email:&nbsp;</label>
+              <label id="error4" class="form-label"></label>
+              <input type="text" class="form-control" id="email_R">
+           </div>
+
+           <div class="mb-3" style="color: black;">
+            <label for="apellido" class="form-label">Contraseña:&nbsp;</label>
+            <label id="error5" class="form-label"></label>
+            <input type="text" class="form-control" id="password_R">
+           </div>
+
+
+           <button class="btn btn-primary" id="btnRegistrar" type="submit">
+            Registrar
+           </button>
+
+          </form>
+
+        </div>
+      </div>
     </div>
+
+
+
     <footer>
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">

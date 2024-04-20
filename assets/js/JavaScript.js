@@ -41,3 +41,91 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 /*=============== */
+
+//login 
+
+let emailL = document.getElementById("email_L");
+let passwordL = document.getElementById("password_L");
+
+let nombreR = document.getElementById("nombre_R")
+let emailR = document.getElementById("email_R")
+let passwordR = document.getElementById("password_R")
+
+let error1 = document.getElementById("error1");
+let error2 = document.getElementById("error2");
+let error3 = document.getElementById("error3");
+let error4 = document.getElementById("error4");
+let error5 = document.getElementById("error5");
+
+let btnEntrar = document.getElementById("btnEntrar");
+let btnRegistrar = document.getElementById("btnRegistrar")
+
+let emailLV = "";
+let passwordLV = "";
+
+let nombreRV = "";
+let emailRV = "";
+let passwordRV = "";
+
+btnEntrar.addEventListener("click", function(e) {
+
+  e.preventDefault();
+
+  error1.innerHTML = "";
+  error2.innerHTML = "";
+    
+  emailLV = emailL.value;
+  passwordLV = passwordL.value;
+
+  if(emailLV === ""){
+    error1.innerHTML = "debe ingresar email";
+    error1.style.color = "red";
+    alert("email no tiene que estar vacio");
+    return;
+  }
+
+  if(passwordLV === ""){
+    error2.innerHTML = "debe ingresar password";
+    error2.style.color = "red";
+    alert("password no tiene que estar vacio");
+    return;
+  }
+  
+
+});
+
+btnRegistrar.addEventListener("click", function(e) {
+
+  e.preventDefault();
+
+
+  error3.innerHTML = "";
+  error4.innerHTML = "";
+  error5.innerHTML = "";
+
+  nombreRV = nombreR.value;
+  emailRV = emailR.value;
+  passwordRV = passwordR.value;
+  
+  if(nombreRV === ""){
+    error3.innerHTML = "debe ingresar nombre";
+    error3.style.color = "red";
+    alert("nombre no tiene que estar vacio");
+    return;
+  }
+
+  if(emailRV === ""){
+    error4.innerHTML = "debe ingresar email";
+    error4.style.color = "red";
+    alert("email no tiene que estar vacio");
+    return;
+  }
+
+  if(passwordRV === ""){
+    error5.innerHTML = "debe ingresar password";
+    error5.style.color = "red";
+    alert("password no tiene que estar vacio");
+    return;
+  }
+
+});
