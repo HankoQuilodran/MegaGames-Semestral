@@ -297,11 +297,32 @@ footer {
 /*============*/
 
 /*Cartas*/
-.card a img{
+.star-card a img{
   display:block !important;
-  max-height: 500px;
+  height: 500px;
   flex-direction: column;
   overflow-y: hidden;
+}
+.deal-card{
+  padding: none;
+  margin: none;
+  width: 240px;
+}
+.deal-card a img{
+  height: 320px;  
+  width: 240px;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.console-card{
+  padding: none;
+  margin: none;
+  width: 240px;
+}
+.console-card a img{
+  width: 240px;  
+  height: 180px;  
+  overflow:auto;
 }
 /*===========*/ 
 table {
@@ -317,3 +338,4 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
